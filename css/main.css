@@ -2,7 +2,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Mono", monospace;
-  background: black;
+  background: whitesmoke !important;
 }
 
 .offset:before {
@@ -101,8 +101,10 @@ h3.heading {
 
 .jumbotron {
   margin-bottom: 0;
-  border-radius: 0;
+  border-radius: 2px;
   padding: 3rem 0 2rem;
+  background: whitesmoke !important;
+  border-color:  black;
 }
 .card-img-top {
   height: 205px;
@@ -125,3 +127,17 @@ h4.heading {
   background-color: #0471b1;
   margin: 0 auto 1rem;
 }
+
+.foto{
+  border-radius: 100px !important;
+  height: 150px;
+  width: 150px;
+  align-self: center;
+}
+
+.container-fluid {
+  background: whitesmoke;
+}
+
+
+
