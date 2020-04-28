@@ -1,8 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 
-body {
+body,html {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Mono", monospace;
-  background: whitesmoke !important;
+  background:whitesmoke !important;
+}
+
+#footer {
+  background:rgba(20,20,20) !important;
+}
+
+#footer p {
+  color: white !important ;
 }
 
 .offset:before {
@@ -13,13 +25,36 @@ body {
 }
 
 /***** Navbar ******/
-.navbar {
+.navbar  {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
-  background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(20,20,20) !important;
+  position: fixed;
 }
+
+.dropdown-menu{
+  
+  background: rgba(20,20,20) !important;
+  
+}
+
+#cm:hover, #cm1:hover {
+  color: black!important;
+  border-bottom: 5px solid red;
+  background-color:grey;
+}
+
+.dropdown-item {
+  color: white !important;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500 !important;
+  letter-spacing: 0.1rem;
+}
+
 .navbar-brand img {
   height: 5rem;
 }
@@ -33,22 +68,32 @@ body {
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(20,20,20) !important;
+  border-bottom: 5px solid #0471b1;
+  background-color:white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .dropdown-item:hover {
   color: #0471b1 !important;
   border-bottom: 5px solid #0471b1;
   background-color:white;
   color: black;
 }
 
+
 /***** Slider (carousel) *****/
 .carousel-item {
   height: 80vh;
-  background: black;
-  object-fit: contain;
+  background-image:url('../img/giphy.gif'); 
+  background-repeat:repeat; 
+  
 }
 
 .carousel-item img {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .carousel-caption {
@@ -101,11 +146,20 @@ h3.heading {
 
 .jumbotron {
   margin-bottom: 0;
-  border-radius: 2px;
   padding: 3rem 0 2rem;
   background: whitesmoke !important;
-  border-color:  black;
 }
+#directiva .card {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#telematica .card {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+
 .card-img-top {
   height: 205px;
   width: 100%;
@@ -114,11 +168,10 @@ h3.heading {
 
 
 h4.heading {
-  font-size: 1.9rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #1276D3 !important;
-  font-size: 1.5rem;
 }
 
 .heading-underline1 {
@@ -136,8 +189,42 @@ h4.heading {
 }
 
 .container-fluid {
-  background: whitesmoke;
+  background: transparent;
 }
 
+/***** Section Contacto ******/
+
+#contacto .heading-underline {
+  width: 30vw;
+  height: 0.2rem;
+  background-color: #0471b1;
+  margin: 0 auto 2rem;
+}
+
+#contacto .heading-underline1 {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #0471b1;
+ 
+}
+
+
+/******* RESPONSIVE *******/
+@media (max-width: 767px) {
+  .video {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+  }
+  .row {
+    align-self: center;
+    text-align: center;
+  }
+  .card {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+}
 
 
